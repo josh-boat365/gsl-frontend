@@ -1,0 +1,69 @@
+<div class="row col d-flex justify-content-center mt-4">
+    <div class="col-md-12 col-lg-6">
+      <div class="card" >
+        <div class="card-header">
+          <h3 class="card-title">Currency</h3>
+          <div class="card-options">
+            <div class="btn-group"></div>
+          </div>
+        </div>
+
+        <div class="card-body">
+            <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+
+              <div class="form-group">
+                <label class="form-label">Currency Country</label>
+                <select class="form-control custom-select select2" name="country" id="country">
+                    <option value="" disabled selected>Select Country</option>
+                    <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+               </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Currency Code</label>
+                <input
+                  type="text"
+                  name="code"
+                  class="form-control"
+                  id="name"
+                  placeholder="Currency Code"/>
+              </div>
+
+              
+
+              <div class="form-group">
+                <label class="form-label">Currency Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="description"
+                  placeholder="Currency Name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Currency Description</label>
+                <input
+                  type="text"
+                  name="description"
+                  class="form-control"
+                  id="description"
+                  placeholder="Currency Type Description"
+                />
+              </div>
+
+
+            </div>
+          </div>
+  
+          <div class="form-footer mt-2">
+            <a href="#" class="btn btn-primary">Submit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  

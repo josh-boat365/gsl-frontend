@@ -1,0 +1,33 @@
+<!--Row-->
+
+<div class="row row-deck col d-flex justify-content-center mt-9">
+    <div class="col-xl-4 col-lg-5 col-md-12">
+      <div class="card overflow-hidden">
+        <div class="card-header">
+          <h3 class="card-title">Settings</h3>
+        </div>
+        <div class="card-body">
+          <div class="scrollbar h-400" id="scrollbar">
+            <section *ngFor="let item of menu">
+              <div class="d-flex mb-5" (click)="onSelect(item)">
+                <a href="javascript:void(0)" class="me-4">
+                  <img
+                    class="w-8 h-8 rounded shadow"
+                    src="../../assets/images/orders/1.jpg"
+                    alt="media1"
+                  />
+                </a>
+                <div class="mt-3">
+                  <h5 class="mb-1 font-weight-semibold">{{ item.title }}</h5>
+                  <small class="text-muted">{{ item.description }}</small>
+                </div>
+              </div>
+            </section>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End row-->
+  
